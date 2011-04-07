@@ -1,0 +1,15 @@
+This is one of the projects used at @dpp's Lift course held at Skillsmatter, London, March 2011.
+
+The code is the state of the code at the end of the class, and as such probably isn't going to make a lot of sense but might contain something someone can find useful.
+
+From my notes:
+ * Demonstation of using Lift to just pass JSON messages back and forth to a JavaScript UI.
+ * There's a drawMe function defined outside of Lift (in index.html) which is invoked via a scheduled ping to in the JsonOnly CometActor.  The state is maintained in the MyJsonOnly session var and also in the JavaScript client via the myInfo variable.
+ * Files touched: comet/JsonOnly.scala, snippet/HelloWorld.scala, index.html
+
+Run with:
+
+  $ sbt
+  > update
+  > jetty-run
+
